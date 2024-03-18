@@ -6,19 +6,19 @@ go mod tidy
 Docker is a platform designed to help developers build, share, and run container applications.
 
 We will start by build the image.
- ```docker build -t go-project .```
+ ```docker build -t ftm-golang .```
 
 Check if the image is built.
  ```docker images```
 
 To verify if the image is built successfully.
-```docker run -p 8090:8080 -d go-project```
+```docker run -p 8090:8080 -d ftm-golang```
 
 Check if the image is running successfully.
  ```docker ps```
 
 Tag the image.
- ```docker tag go-project:latest <user-name>/product-api:latest```
+ ```docker tag ftm-golang:latest <user-name>/product-api:latest```
 
 Check if the image is created
  ```docker images```
